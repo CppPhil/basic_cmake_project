@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+#include <fmt/format.h>
+
 #include <pl/bitmask.hpp>
 
 #include "main.hpp"
@@ -26,6 +28,8 @@ int main()
   } else {
     std::cout << "bad\n";
   }
+  
+  fmt::print("Hello {}, {}\n", "World", 42);
 }
 
 void f()
